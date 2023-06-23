@@ -1,7 +1,4 @@
-//
-// Created by the DataSnap proxy generator.
-// 23.04.2014 23:27:22
-//
+
 
 unit uRemoteMethods;
 
