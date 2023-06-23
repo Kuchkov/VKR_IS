@@ -1,0 +1,109 @@
+object fAccrualEditor: TfAccrualEditor
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = #1053#1072#1095#1080#1089#1083#1077#1085#1080#1077
+  ClientHeight = 98
+  ClientWidth = 466
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    AlignWithMargins = True
+    Left = 378
+    Top = 3
+    Width = 85
+    Height = 92
+    Margins.Left = 0
+    Align = alRight
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitLeft = 321
+    object Button1: TButton
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 79
+      Height = 25
+      Margins.Bottom = 0
+      Align = alTop
+      Caption = 'OK'
+      Default = True
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      AlignWithMargins = True
+      Left = 3
+      Top = 31
+      Width = 79
+      Height = 25
+      Align = alTop
+      Caption = #1054#1090#1084#1077#1085#1072
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+  object PageControl1: TPageControl
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 372
+    Height = 92
+    ActivePage = TabSheet1
+    Align = alClient
+    TabOrder = 1
+    ExplicitWidth = 315
+    object TabSheet1: TTabSheet
+      Caption = #1044#1072#1085#1085#1099#1077
+      ExplicitWidth = 307
+      object Label5: TLabel
+        Left = 64
+        Top = 39
+        Width = 36
+        Height = 13
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = #1044#1072#1090#1072
+      end
+      object Label3: TLabel
+        Left = 64
+        Top = 12
+        Width = 36
+        Height = 13
+        Alignment = taRightJustify
+        AutoSize = False
+        Caption = #1050#1086#1076
+      end
+      object DBEdit5: TDBEdit
+        Left = 114
+        Top = 36
+        Width = 241
+        Height = 21
+        DataField = #1044#1072#1090#1072
+        DataSource = dmData.dsAccrual
+        TabOrder = 1
+      end
+      object DBEdit3: TDBEdit
+        Left = 114
+        Top = 9
+        Width = 241
+        Height = 21
+        Color = clMoneyGreen
+        DataField = #1050#1086#1076
+        DataSource = dmData.dsAccrual
+        TabOrder = 0
+      end
+    end
+  end
+end
